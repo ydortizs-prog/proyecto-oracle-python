@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Feliz Cumpleaños Jamil</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #000000, #1a1a1a);
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .card {
+            background: #111;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 900px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+            animation: aparecer 1.5s ease;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: gold;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.4s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.08);
+        }
+
+        .mensaje {
+            font-size: 18px;
+            color: #ddd;
+            margin-top: 20px;
+        }
+
+        .emoji {
+            font-size: 60px;
+            margin: 10px 0;
+            animation: saltar 1.5s infinite;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: scale(0.85);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes saltar {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🎉 ¡Feliz Cumpleaños! 🎉</h1>
+        <h2>Jamil</h2>
+
+        <div class="emoji">⚽🐐🎂</div>
+
+        <div class="gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg">
+            <img src="foto1 de jamil.png">
+            <img src="foto3 de jamil.png">
+            <img src="foto2 de jamil.jpeg">
+        </div>
+
+        <p class="mensaje">
+            Que tengas un día legendario,<br>
+            lleno de goles, éxitos y sueños cumplidos.<br>
+            <strong>¡Al estilo CR7! 💪🔥</strong>
+        </p>
+    </div>
+
+</body>
+</html>
